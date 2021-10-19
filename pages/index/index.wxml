@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="scan">
+    <view class="picture">
+      <button>拍照识别</button>
+    </view>
+  </view>
+  <view class="map"  data-url="/pages/map/map" bindtap="gotoOne">
+    <view class="map_module">
+      <button>地图模块</button>
+    </view>
+    <view class="context">语音识别内容：{{currentText}}</view>
+    <view class="sound" catchtouchstart="streamRecord" catchtouchend="endStreamRecord">语音识别按钮</view>
+    <!-- <view>翻译结果:{{translateText}}</view> -->
+  </view>
+</view>
+
+
