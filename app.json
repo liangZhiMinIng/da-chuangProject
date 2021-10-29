@@ -1,7 +1,10 @@
 {
   "pages":[
+    
     "pages/index/index",
     "pages/voice/voice",
+    "pages/test/test",
+    "pages/speak/speak",
     "pages/map/map"
   ],
   "window":{
