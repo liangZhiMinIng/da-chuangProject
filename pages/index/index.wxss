@@ -44,7 +44,7 @@
   height: 180rpx;
   margin-top: 50rpx;
   background-color: #F0F8FF;
-  border: 0.2rpx solid black;
+  border: 0.2rpx solid rgb(231, 230, 230);
 }
 
 .yuyinBtn {

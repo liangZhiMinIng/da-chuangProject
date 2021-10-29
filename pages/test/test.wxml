@@ -1,13 +1,20 @@
 <view class="flex-style">
   <view class="flex-item active" bindtouchstart="goToCar">驾车</view>
 </view>
+<!-- 地图 -->
 <view class="map_box">
   <map id="navi_map" longitude="{{longitude}}" latitude="{{latitude}}" scale="12" markers="{{markers}}" polyline="{{polyline}}"></map>
 </view>
 
 <view class="text_box">
-  <input bindinput="bindInput" placeholder="搜索" focus="true" />
-  
+  <!-- <input class="map_input" bindinput="bindInput" placeholder="搜索" focus="true" /> -->
+  <view class="bao">
+    <input class="map_input map_twxt" placeholder="搜索地点或地址" bindinput="bindInput" focus="true"/>
+    <!-- <view class="map_twxt">搜索地点或地址</view> -->
+    <view class="detail_button" bindtouchstart="goDetail">
+      <text class="xiang">详情</text>
+    </view>
+  </view>
   <view bindtouchstart="bindSearch" data-location="{{i.location}}" data-keywords="{{i.name}}" class="text_box_search_tips" wx:key="index" wx:for="{{tips}}" wx:for-item="i">
     {{i.name}}
   </view>
@@ -15,7 +22,7 @@
 <view class="text_box_2">
   <view class="text">{{distance}}</view>
   <view class="text">{{cost}}</view>
-  <view class="detail_button" bindtouchstart="goDetail">详情</view>
+  
   <view wx:for="{{steps}}" wx:key="index" wx:for-item="i">
   {{i.instruction}}
   </view>
