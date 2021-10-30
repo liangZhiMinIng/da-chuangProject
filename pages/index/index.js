@@ -84,10 +84,10 @@ Page({
         url:  e.currentTarget.dataset.url
       })
     },
-  ttt(){
-    wx.navigateTo({
-      url: "/pages/test/test?searchcontent=小白楼"
-    })
-  }
+  // ttt(){
+  //   wx.navigateTo({
+  //     url: "/pages/test/test?searchcontent=小白楼"
+  //   })
+  // }
 })
   

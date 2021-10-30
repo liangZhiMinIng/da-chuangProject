@@ -10,11 +10,11 @@
     </view>
     <view class="context" >
       语音识别内容：{{currentText}}
-      <!-- <view style="margin-top:30rpx">翻译结果:{{translateText}}</view> -->
+      <view style="margin-top:30rpx">翻译结果:{{translateText}}</view>
     </view>
     
-    <view class="sound" catchtouchstart="streamRecord" catchtouchend="endStreamRecord" >语音识别按钮</view>
-    <view class="sound"  bindtap="ttt" >tiaozhuan</view>
+    <view class="sound" catchtouchstart="streamRecord" catchtouchend="endStreamRecord">语音识别按钮</view>
+    <!-- <view class="sound"  bindtap="ttt" >tiaozhuan</view> -->
   </view>
 </view>
 
